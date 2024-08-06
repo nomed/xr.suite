@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.retex</groupId>
         <artifactId>xr-conf</artifactId>
         <version>0.1.2</version>
-        <relativePath/>
+        <relativePath />
     </parent>
     <groupId>com.retex</groupId>
     <artifactId>xr-iam-backend</artifactId>
@@ -17,20 +17,20 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-        <xr-bom.version>0.12.3</xr-bom.version>
+        <xr-bom.version>0.12.6-SNAPSHOT</xr-bom.version>
         <xr-shared.version>0.8.0</xr-shared.version>
         <xr-iam-main.version>1.4.0</xr-iam-main.version>
-        <!-- -->
+        
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <jackson-datatype.version>2.12.5</jackson-datatype.version>        
         <apache-commons-csv.version>1.8</apache-commons-csv.version>
-        <!-- <swagger-annotations.version>1.6.13</swagger-annotations.version> -->
+        
     </properties>
     <dependencyManagement>
         <dependencies>
           
 
-            <!-- https://github.com/AxonFramework/axon-bom/blob/master/pom.xml -->
+            
             <dependency>
                 <groupId>com.retex</groupId>
                 <artifactId>xr-bom</artifactId>
@@ -54,7 +54,7 @@
             <artifactId>commons-csv</artifactId>
             <version>${apache-commons-csv.version}</version>
         </dependency>
-        <!--  -->
+        
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -98,7 +98,7 @@
             <artifactId>dapr-sdk-springboot</artifactId>
         </dependency>
         <dependency>
-            <!-- postgres for springboot -->
+            
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
@@ -116,14 +116,14 @@
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <!-- <version>${swagger-annotations.version}</version> -->
+            
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+        
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
         </dependency>
-        <!-- xr library  -->
+        
         <dependency>
             <groupId>com.retex</groupId>
             <artifactId>xr-shared</artifactId>
@@ -139,14 +139,9 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <scope>compile</scope>
-            <!-- <version>3.0.0</version> -->
+            
         </dependency>
-        <!-- <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>2.1.214</version>
-            <scope>compile</scope>
-        </dependency> -->
+        
     </dependencies>
     <build>
         <pluginManagement>
