@@ -70,7 +70,7 @@ for pom_path in glob.glob("pkgs/**/pom.xml", recursive=True):
                 commit += "deps: update %s from %s to %s\n" % (artifact.text, version_current, manifest[artifact.text])
     print (commit)
     tree.write(pom_path, encoding='utf-8', xml_declaration=True)
-    if commit and False:
+    if commit :
         # Stage the file
         subprocess.run(["git", "add","-f", pom_path], check=True)
         # Commit the changes
