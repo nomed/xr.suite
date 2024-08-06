@@ -13,7 +13,6 @@
     <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
     <xr-bom.version>0.12.6</xr-bom.version>
     <xr-shared-main.version>1.6.0</xr-shared-main.version>
-    
     <jackson-datatype-jsr310.version>2.12.5</jackson-datatype-jsr310.version> 
   </properties>
   <developers>
