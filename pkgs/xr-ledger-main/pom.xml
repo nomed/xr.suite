@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.retex</groupId>
@@ -11,9 +11,9 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-		<xr-bom.version>0.12.6-SNAPSHOT</xr-bom.version>
+		<xr-bom.version>0.12.3</xr-bom.version>
 		<xr-shared-main.version>1.6.0</xr-shared-main.version>
-		
+		<!-- -->
         <jackson-datatype-jsr310.version>2.12.5</jackson-datatype-jsr310.version>
 		<org.mapstruct.version>1.5.5.Final</org.mapstruct.version> 
 		<lombok.version>1.18.32</lombok.version>
@@ -103,13 +103,16 @@
 		<dependency>
 			<groupId>net.sf.dozer</groupId>
 			<artifactId>dozer</artifactId>
-			
+			<!-- <version>${dozer.version}</version> -->
 		</dependency>
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
 		</dependency>
-		
+		<!-- <dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+		</dependency> -->
 		<dependency>
 			<groupId>jakarta.validation</groupId>
 			<artifactId>jakarta.validation-api</artifactId>
@@ -133,7 +136,7 @@
 		<configuration>
 			<annotationProcessorPaths>
 				<path>
-					<groupId>org.projectlombok</groupId> 
+					<groupId>org.projectlombok</groupId> <!-- IMPORTANT - LOMBOK BEFORE MAPSTRUCT -->
 					<artifactId>lombok</artifactId>
 					<version>${lombok.version}</version>
 				</path>

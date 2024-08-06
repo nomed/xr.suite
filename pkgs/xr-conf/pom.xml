@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.retex</groupId>
   <artifactId>xr-conf</artifactId>
   <packaging>pom</packaging>
-  <version>0.1.2</version>
+  <version>0.1.2</version><!--  {x-version-update:xr-conf} -->
   <name>XR Shared Config</name>
   <url>https://github.com/weareretx/iconic.xr.suite</url>
   <description>
@@ -79,7 +79,7 @@
   <build>
     <pluginManagement>
       <plugins>
-        
+        <!-- https://maven.apache.org/plugins/maven-jar-plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
@@ -100,14 +100,22 @@
             </archive>
           </configuration>
         </plugin>
-        
+        <!-- https://maven.apache.org/plugins/maven-compiler-plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven-compiler-plugin.version}</version>
-          
+          <!-- <configuration>
+            <annotationProcessorPaths>
+              <path>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+              </path>
+            </annotationProcessorPaths>
+          </configuration>           -->
         </plugin>
-        
+        <!-- https://maven.apache.org/plugins/maven-site-plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
@@ -116,19 +124,19 @@
             <skipDeploy>true</skipDeploy>
           </configuration>
         </plugin>
-        
+        <!-- https://maven.apache.org/plugins/maven-dependency-plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
           <version>${maven-dependency-plugin.version}</version>
         </plugin>
-        
+        <!-- https://maven.apache.org/surefire/maven-surefire-plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven-surefire-plugin.version}</version>
         </plugin>
-        
+        <!-- https://github.com/spotify/fmt-maven-plugin -->
         <plugin>
           <groupId>com.spotify.fmt</groupId>
           <artifactId>fmt-maven-plugin</artifactId>
@@ -141,19 +149,19 @@
             </execution>
           </executions>
         </plugin>
-        
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
           <version>${maven-clean-plugin.version}</version>
         </plugin>
-        
+        <!-- https://www.mojohaus.org/flatten-maven-plugin/ -->
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>flatten-maven-plugin</artifactId>
           <version>${flatten-maven-plugin}</version>
         </plugin>
-        
+        <!-- https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/ -->
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
@@ -169,7 +177,7 @@
             <layers>
               <enabled>true</enabled>
               <includeLayerTools>true</includeLayerTools>
-              
+              <!--<configuration>${project.basedir}/src/layers.xml</configuration>-->
             </layers>
           </configuration>               
         </plugin>
@@ -179,7 +187,7 @@
 
   <reporting>
     <plugins>
-      
+      <!-- https://maven.apache.org/plugins/maven-project-info-reports-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -207,7 +215,7 @@
           <packaging>jar</packaging>
         </configuration>
       </plugin>
-      
+      <!-- https://maven.apache.org/plugins/maven-javadoc-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -232,7 +240,7 @@
           </links>
         </configuration>
       </plugin>
-      
+      <!-- https://maven.apache.org/jxr/maven-jxr-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>

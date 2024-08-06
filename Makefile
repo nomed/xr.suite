@@ -45,7 +45,7 @@ xr-shared: tmp
 	if [ -d ".tmp/xr-shared/.git" ]; then \
 		cd .tmp/xr-shared && git pull; \
 	else \
-		git clone https://github.com/retex-iconic/iconic.xr.shared-lib .tmp/xr-shared; \
+		git clone  https://github.com/retex-iconic/iconic.xr.shared-lib .tmp/xr-shared; \
 	fi
 
 	rsync -av --exclude='.git' \
@@ -56,7 +56,7 @@ xr-shared: tmp
 	if [ -d ".tmp/xr-shared-main/.git" ]; then \
 		cd .tmp/xr-shared-main && git pull; \
 	else \
-		git clone https://github.com/retex-iconic/iconic.xr.shared-main-lib .tmp/xr-shared-main; \
+		git clone -b imp-transactional https://github.com/retex-iconic/iconic.xr.shared-main-lib .tmp/xr-shared-main; \
 	fi
 
 	rsync -av --exclude='.git' \
@@ -80,7 +80,7 @@ xr-iam: tmp
 	if [ -d ".tmp/xr-iam-backend/.git" ]; then \
 		cd .tmp/xr-iam-backend && git pull; \
 	else \
-		git clone https://github.com/retex-iconic/iconic.xr.xrmsiam .tmp/xr-iam-backend; \
+		git clone -b imp-transactional https://github.com/retex-iconic/iconic.xr.xrmsiam .tmp/xr-iam-backend; \
 	fi
 
 	rsync -av --exclude='.git' \

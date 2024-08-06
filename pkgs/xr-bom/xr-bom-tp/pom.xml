@@ -1,18 +1,18 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.retex</groupId>
     <artifactId>xr-conf</artifactId>
     <version>0.1.2</version>
-    <relativePath />
+    <relativePath/>
   </parent>
   
   <groupId>com.retex</groupId>
   <artifactId>xr-bom-tp</artifactId>
   <packaging>pom</packaging>
-  <version>0.12.6</version>
-  
+  <version>0.12.6-SNAPSHOT</version>
+  <!-- {x-version-update:xr-bom:current} -->
   <name>XR Third-party Shared Dependencies</name>
   <url>https://github.com/weareretx/iconic.xr.suite</url>
   <description>
@@ -71,7 +71,7 @@
     <site.installationModule>${project.artifactId}</site.installationModule>
     <spring-boot-starter-parent.version>2.7.18</spring-boot-starter-parent.version>
     <spring-cloud-dependencies.version>2023.0.0</spring-cloud-dependencies.version>
-    
+    <!--<spring-boot-dependencies.version>2.7.18</spring-boot-dependencies.version>-->
     <springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
     <swagger-annotations.version>1.6.14</swagger-annotations.version>
     <validation-api.version>2.0.1.Final</validation-api.version>
@@ -89,7 +89,7 @@
   </properties>
   <dependencyManagement>
     <dependencies>
-      
+      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -115,7 +115,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      
+      <!-- Note - consider to switch to jjwt-api -->
       <dependency>
         <groupId>io.jsonwebtoken</groupId>
         <artifactId>jjwt</artifactId>
@@ -223,7 +223,7 @@
         <artifactId>graphql-java-tools</artifactId>
         <version>${graphql-java-tools.version}</version>
       </dependency>
-	  
+	  <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 	<dependency>
 	    <groupId>com.google.guava</groupId>
 	    <artifactId>guava</artifactId>
