@@ -5,12 +5,12 @@
     <groupId>com.retex</groupId>
     <artifactId>xr-conf</artifactId>
     <version>0.1.2</version>
-    <relativePath />
+    <relativePath/>
   </parent>  
   <groupId>com.retex</groupId>
   <artifactId>xr-bom</artifactId>
   <packaging>pom</packaging>
-  <version>0.12.6-SNAPSHOT</version>
+  <version>0.12.6</version>
 
   <modules>
     <module>xr-bom-fp</module>

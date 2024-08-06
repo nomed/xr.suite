@@ -1,4 +1,11 @@
 # Changelog
+## [0.12.6](https://github.com/nomed/xr.suite/compare/xr-bom-v0.12.6-SNAPSHOT...xr-bom@v0.12.6) (2024-08-06)
+
+
+### Bug Fixes
+
+* xr-bom pom ([909378b](https://github.com/nomed/xr.suite/commit/909378b86ddb255ddf328fa329df573462210cbc))
+
 ## [0.12.5](https://github.com/weareretx/iconic.xr.suite/compare/v0.12.4...v0.12.5) (2024-06-17)
 
 
