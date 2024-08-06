@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.8.1](https://github.com/nomed/xr.suite/compare/xr-shared-v0.8.0...xr-shared@v0.8.1) (2024-08-06)
+
+
+### Bug Fixes
+
+* xr-shared pom ([264ff6e](https://github.com/nomed/xr.suite/commit/264ff6e92a79e06e0533096323beff3fb003e02d))
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([3f7c797](https://github.com/nomed/xr.suite/commit/3f7c797a2623381864ea6eb5f3382038819b2d3a))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([cea06fa](https://github.com/nomed/xr.suite/commit/cea06fabd6bcdff6a984070480484f2bbf932cb6))
+
 ## [0.8.0](https://github.com/weareretex/iconic.xr.shared-lib/compare/v0.7.2...v0.8.0) (2024-08-05)
 
 

@@ -1,6 +1,6 @@
 {
   "pkgs/xr-iam-backend": "1.6.0",
-  "pkgs/xr-shared": "0.8.0",
+  "pkgs/xr-shared": "0.8.1",
   "pkgs/xr-masterdata-graphql": "1.2.1",
   "pkgs/xr-ledger-graphql": "1.2.0",
   "pkgs/xr-shared-main": "1.6.0",

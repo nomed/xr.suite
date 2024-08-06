@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.retex</groupId>
   <artifactId>xr-shared</artifactId>
-  <version>0.8.0</version>
+  <version>0.8.1</version>
   <name>xr-shared</name>
   <description>Iconic XR - Shared Lib</description>
    <properties>
