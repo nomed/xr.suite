@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.retex</groupId>
+        <artifactId>xr-conf</artifactId>
+        <version>0.1.2</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.retex</groupId>
+    <artifactId>xr-iam-graphql</artifactId>
+    <version>1.3.0</version>
+
+    <name>xr-iam-graphql</name>
+    <description>Iconic XR - Iam GraphQL</description>
+    <properties>
+        <java.version>17</java.version>
+        <xr-bom.version>0.12.3</xr-bom.version>
+        <xr-iam-main.version>1.4.0</xr-iam-main.version>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>nomed</id>
+            <name>Daniele Favara</name>
+            <email>daniele.favara@retexspa.com</email>
+            <organization>Iconic@Retex</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <organization>
+        <name>Iconic@Retex</name>
+    </organization>
+
+    <scm>
+        <connection>scm:git:git@github.com:weareretx/iconic.xr.suite.git</connection>
+        <developerConnection>scm:git:git@github.com:weareretx/iconic.xr.suite.git</developerConnection>
+        <url>https://github.com/weareretx/iconic.xr.suite</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/weareretx/iconic.xr.suite/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>github-weareretex-xr-suite</id>
+            <name>GitHub Apache Maven Packages - Iconic XR</name>
+            <url>https://maven.pkg.github.com/weareretex/iconic.xr.suite</url>
+        </repository>
+    </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>Iconic@Retex</name>
+            <url>https://retexspa.com</url>
+        </license>
+    </licenses>
+
+    <dependencyManagement>
+        <dependencies>
+             <dependency>
+                <groupId>com.retex</groupId>
+                <artifactId>xr-bom</artifactId>
+                <version>${xr-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-graphql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.graphql</groupId>
+            <artifactId>spring-graphql-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-integration</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>graphiql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- postgres for springboot -->
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-java-extended-scalars</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.graphql-java</groupId>
+                    <artifactId>graphql-java</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.tailrocks.graphql</groupId>
+            <artifactId>graphql-datetime-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.retex</groupId>
+            <artifactId>xr-iam-main</artifactId>
+            <version>${xr-iam-main.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

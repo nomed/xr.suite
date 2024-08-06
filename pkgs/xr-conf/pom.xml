@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.retex</groupId>
+  <artifactId>xr-conf</artifactId>
+  <packaging>pom</packaging>
+  <version>0.1.2</version><!--  {x-version-update:xr-conf} -->
+  <name>XR Shared Config</name>
+  <url>https://github.com/weareretx/iconic.xr.suite</url>
+  <description>
+    Shared build configuration for Springboot XR Java libraries.
+    part of the Iconic XR Suite.
+  </description>
+
+  <developers>
+    <developer>
+      <id>nomed</id>
+      <name>Daniele Favara</name>
+      <email>daniele.favara@retexspa.com</email>
+      <organization>Iconic@Retex</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <organization>
+    <name>Iconic@Retex</name>
+  </organization>
+  <scm>
+    <connection>scm:git:git@github.com:weareretx/iconic.xr.suite.git</connection>
+    <developerConnection>scm:git:git@github.com:weareretx/iconic.xr.suite.git</developerConnection>
+    <url>https://github.com/weareretx/iconic.xr.suite</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <url>https://github.com/weareretx/iconic.xr.suite/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>github-weareretex-xr-suite</id>
+      <name>GitHub Apache Maven Packages - Iconic XR</name>
+      <url>https://maven.pkg.github.com/weareretex/iconic.xr.suite</url>
+    </repository>
+  </distributionManagement>
+
+  <licenses>
+    <license>
+      <name>Iconic@Retex</name>
+      <url>https://retexspa.com</url>
+    </license>
+  </licenses>
+
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <site.installationModule>${project.artifactId}</site.installationModule>
+    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+    <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+    <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
+    <maven-dependency-plugin.version>3.4.0</maven-dependency-plugin.version>
+    <maven-project-info-reports-plugin.version>3.4.1</maven-project-info-reports-plugin.version>
+    <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
+    <maven-jxr-plugin.version>3.3.0</maven-jxr-plugin.version>
+    <report.jxr.inherited>false</report.jxr.inherited>
+    <mapstruct.version>1.5.3.Final</mapstruct.version>
+    <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
+    <fmt-maven-plugin.version>2.19</fmt-maven-plugin.version>
+    <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
+    <flatten-maven-plugin.version>1.3.0</flatten-maven-plugin.version>
+    <spring-boot-maven-plugin.version>2.5.1</spring-boot-maven-plugin.version>
+  </properties>
+  <dependencyManagement>
+
+  </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- https://maven.apache.org/plugins/maven-jar-plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${maven-jar-plugin.version}</version>
+          <configuration>
+            <archive>
+              <addMavenDescriptor>true</addMavenDescriptor>
+              <index>true</index>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+              </manifest>
+              <manifestEntries>
+                <artifactId>${project.artifactId}</artifactId>
+                <groupId>${project.groupId}</groupId>
+                <version>${project.version}</version>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+        <!-- https://maven.apache.org/plugins/maven-compiler-plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+          <!-- <configuration>
+            <annotationProcessorPaths>
+              <path>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+              </path>
+            </annotationProcessorPaths>
+          </configuration>           -->
+        </plugin>
+        <!-- https://maven.apache.org/plugins/maven-site-plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>${maven-site-plugin.version}</version>
+          <configuration>
+            <skipDeploy>true</skipDeploy>
+          </configuration>
+        </plugin>
+        <!-- https://maven.apache.org/plugins/maven-dependency-plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>${maven-dependency-plugin.version}</version>
+        </plugin>
+        <!-- https://maven.apache.org/surefire/maven-surefire-plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+        </plugin>
+        <!-- https://github.com/spotify/fmt-maven-plugin -->
+        <plugin>
+          <groupId>com.spotify.fmt</groupId>
+          <artifactId>fmt-maven-plugin</artifactId>
+          <version>${fmt-maven-plugin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>${maven-clean-plugin.version}</version>
+        </plugin>
+        <!-- https://www.mojohaus.org/flatten-maven-plugin/ -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>flatten-maven-plugin</artifactId>
+          <version>${flatten-maven-plugin}</version>
+        </plugin>
+        <!-- https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/ -->
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot-maven-plugin.version}</version>
+          <executions>
+            <execution>
+                <goals>
+                    <goal>repackage</goal>
+                </goals>
+            </execution>
+        </executions>          
+          <configuration>
+            <layers>
+              <enabled>true</enabled>
+              <includeLayerTools>true</includeLayerTools>
+              <!--<configuration>${project.basedir}/src/layers.xml</configuration>-->
+            </layers>
+          </configuration>               
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <reporting>
+    <plugins>
+      <!-- https://maven.apache.org/plugins/maven-project-info-reports-plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>${maven-project-info-reports-plugin.version}</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>dependency-info</report>
+              <report>team</report>
+              <report>ci-management</report>
+              <report>issue-management</report>
+              <report>licenses</report>
+              <report>scm</report>
+              <report>dependency-management</report>
+              <report>distribution-management</report>
+              <report>summary</report>
+              <report>modules</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+        <configuration>
+          <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
+          <artifactId>${site.installationModule}</artifactId>
+          <packaging>jar</packaging>
+        </configuration>
+      </plugin>
+      <!-- https://maven.apache.org/plugins/maven-javadoc-plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${maven-javadoc-plugin.version}</version>
+        <reportSets>
+          <reportSet>
+            <id>html</id>
+            <reports>
+              <report>javadoc</report>
+              <report>aggregate</report>
+              <report>aggregate-jar</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+        <configuration>
+          <doclint>none</doclint>
+          <show>protected</show>
+          <nohelp>true</nohelp>
+          <outputDirectory>${project.build.directory}/javadoc</outputDirectory>
+          <links>
+            <link>https://your-list-of-link-here/</link>
+          </links>
+        </configuration>
+      </plugin>
+      <!-- https://maven.apache.org/jxr/maven-jxr-plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>${maven-jxr-plugin.version}</version>
+        <configuration>
+          <linkJavadoc>true</linkJavadoc>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <id>aggregate</id>
+            <inherited>${report.jxr.inherited}</inherited>
+            <reports>
+              <report>jxr</report>
+              <report>aggregate</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+</project>
