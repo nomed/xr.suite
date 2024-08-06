@@ -14,7 +14,7 @@
 	<description>Iconic XR - Ledger GraphQL</description>
 	<properties>
 		<java.version>17</java.version>
-        <xr-bom.version>0.12.6</xr-bom.version>
+        <xr-bom.version>0.12.6-SNAPSHOT</xr-bom.version>
 		<xr-ledger-main.version>1.0.4</xr-ledger-main.version>
 	</properties>
 
