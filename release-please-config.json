@@ -1,0 +1,89 @@
+{
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "tag-separator": "@",
+  "separate-pull-requests": true,
+  "sequential-calls": true,
+  "plugins": [],
+  "packages": {
+    "pkgs/xr-iam-backend": {
+      "package-name": "xr-iam-backend",
+      "release-type": "maven",
+      "initial-version": "1.6.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-shared": {
+      "package-name": "xr-shared",
+      "release-type": "maven",
+      "initial-version": "0.8.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-masterdata-graphql": {
+      "package-name": "xr-masterdata-graphql",
+      "release-type": "maven",
+      "initial-version": "1.2.1",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-ledger-graphql": {
+      "package-name": "xr-ledger-graphql",
+      "release-type": "maven",
+      "initial-version": "1.2.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-shared-main": {
+      "package-name": "xr-shared-main",
+      "release-type": "maven",
+      "initial-version": "1.6.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-masterdata-main": {
+      "package-name": "xr-masterdata-main",
+      "release-type": "maven",
+      "initial-version": "1.1.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-conf": {
+      "package-name": "xr-conf",
+      "release-type": "maven",
+      "initial-version": "0.1.2",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-ledger-backend": {
+      "package-name": "xr-ledger-backend",
+      "release-type": "maven",
+      "initial-version": "1.3.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-bom": {
+      "package-name": "xr-bom",
+      "release-type": "maven",
+      "initial-version": "0.12.6-SNAPSHOT",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-iam-main": {
+      "package-name": "xr-iam-main",
+      "release-type": "maven",
+      "initial-version": "1.4.0",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-ledger-main": {
+      "package-name": "xr-ledger-main",
+      "release-type": "maven",
+      "initial-version": "1.0.4",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-masterdata-backend": {
+      "package-name": "xr-masterdata-backend",
+      "release-type": "maven",
+      "initial-version": "1.9.1",
+      "skip-snapshot": true
+    },
+    "pkgs/xr-iam-graphql": {
+      "package-name": "xr-iam-graphql",
+      "release-type": "maven",
+      "initial-version": "1.3.0",
+      "skip-snapshot": true
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

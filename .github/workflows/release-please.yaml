@@ -1,0 +1,50 @@
+name: Release Please
+on:
+  push:
+    branches:
+    - main
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  release-please:
+    outputs:
+      xr-bom--release_created: ${{steps.release.outputs.xr-bom--release_created}}
+      xr-bom--tag-name: ${{steps.release.outputs.xr-bom--tag-name}}
+      xr-conf--release_created: ${{steps.release.outputs.xr-conf--release_created}}
+      xr-conf--tag-name: ${{steps.release.outputs.xr-conf--tag-name}}
+      xr-iam-backend--release_created: ${{steps.release.outputs.xr-iam-backend--release_created}}
+      xr-iam-backend--tag-name: ${{steps.release.outputs.xr-iam-backend--tag-name}}
+      xr-iam-graphql--release_created: ${{steps.release.outputs.xr-iam-graphql--release_created}}
+      xr-iam-graphql--tag-name: ${{steps.release.outputs.xr-iam-graphql--tag-name}}
+      xr-iam-main-lib--release_created: ${{steps.release.outputs.xr-iam-main-lib--release_created}}
+      xr-iam-main-lib--tag-name: ${{steps.release.outputs.xr-iam-main-lib--tag-name}}
+      xr-ledger-backend--release_created: ${{steps.release.outputs.xr-ledger-backend--release_created}}
+      xr-ledger-backend--tag-name: ${{steps.release.outputs.xr-ledger-backend--tag-name}}
+      xr-ledger-graphql--release_created: ${{steps.release.outputs.xr-ledger-graphql--release_created}}
+      xr-ledger-graphql--tag-name: ${{steps.release.outputs.xr-ledger-graphql--tag-name}}
+      xr-ledger-main-lib--release_created: ${{steps.release.outputs.xr-ledger-main-lib--release_created}}
+      xr-ledger-main-lib--tag-name: ${{steps.release.outputs.xr-ledger-main-lib--tag-name}}
+      xr-masterdata-backend--release_created: ${{steps.release.outputs.xr-masterdata-backend--release_created}}
+      xr-masterdata-backend--tag-name: ${{steps.release.outputs.xr-masterdata-backend--tag-name}}
+      xr-masterdata-graphql--release_created: ${{steps.release.outputs.xr-masterdata-graphql--release_created}}
+      xr-masterdata-graphql--tag-name: ${{steps.release.outputs.xr-masterdata-graphql--tag-name}}
+      xr-masterdata-main--release_created: ${{steps.release.outputs.xr-masterdata-main--release_created}}
+      xr-masterdata-main--tag-name: ${{steps.release.outputs.xr-masterdata-main--tag-name}}
+      xr-shared--release_created: ${{steps.release.outputs.xr-shared--release_created}}
+      xr-shared--tag-name: ${{steps.release.outputs.xr-shared--tag-name}}
+      xr-shared-main--release_created: ${{steps.release.outputs.xr-shared-main--release_created}}
+      xr-shared-main--tag-name: ${{steps.release.outputs.xr-shared-main--tag-name}}
+      xr-iam-main--tag-name: ${{steps.release.outputs.xr-iam-main--tag-name}}
+      xr-iam-main--release_created: ${{steps.release.outputs.xr-iam-main--release_created}}
+      xr-ledger-main--tag-name: ${{steps.release.outputs.xr-ledger-main--tag-name}}
+      xr-ledger-main--release_created: ${{steps.release.outputs.xr-ledger-main--release_created}}
+    runs-on: ubuntu-latest
+    steps:
+    - id: release
+      uses: googleapis/release-please-action@v4
+      with:
+        token: ${{secrets.XR_GITHUB_TOKEN}}
+    - continue-on-error: true
+      name: Print release outputs for debugging
+      run: "echo \"Release outputs:\"\necho \"${{ toJson(steps.release.outputs) }}\""
