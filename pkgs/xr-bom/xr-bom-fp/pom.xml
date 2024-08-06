@@ -5,13 +5,13 @@
     <groupId>com.retex</groupId>
     <artifactId>xr-conf</artifactId>
     <version>0.1.2</version>
-    <relativePath />
+    <relativePath/>
   </parent>  
   <groupId>com.retex</groupId>
   <artifactId>xr-bom-fp</artifactId>
   <packaging>pom</packaging>
 
-  <version>0.12.6-SNAPSHOT</version>
+  <version>0.12.6</version>
 
   <name>XR First-party Shared Dependencies</name>
   <url>https://github.com/weareretx/iconic.xr.suite</url>
