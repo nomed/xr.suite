@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.2](https://github.com/nomed/xr.suite/compare/xr-shared@v0.8.1...xr-shared@v0.8.2) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([0eb0179](https://github.com/nomed/xr.suite/commit/0eb017951597174c3efcc7b91d7ed5c11cb886ed))
+
 ## [0.9.1](https://github.com/weareretex/iconic.xr.shared-lib/compare/v0.9.0...v0.9.1) (2024-08-12)
 
 
