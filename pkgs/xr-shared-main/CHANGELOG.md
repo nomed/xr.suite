@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.0](https://github.com/weareretex/iconic.xr.shared-main-lib/compare/v1.6.0...v1.7.0) (2024-08-09)
+
+
+### Features
+
+* IXB-531 REFACTORING-GERARCHIA ([15bb0a9](https://github.com/weareretex/iconic.xr.shared-main-lib/commit/15bb0a915e6f64a2b4a264a38a20386fa6ddafb3))
+
+
+### Bug Fixes
+
+* gerarchia entity constructor ([01686fa](https://github.com/weareretex/iconic.xr.shared-main-lib/commit/01686fab1bb1c9b67a8dd76abe953c4574a52ded))
+* gerarchia entity new constructor ([2d75494](https://github.com/weareretex/iconic.xr.shared-main-lib/commit/2d754945d99e520f750338b158b0bd830bf31735))
+
 ## [1.6.0](https://github.com/weareretex/iconic.xr.shared-main-lib/compare/v1.5.0...v1.6.0) (2024-08-05)
 
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.2](https://github.com/weareretex/iconic.xr.iam-main-lib/compare/v1.4.1...v1.4.2) (2024-08-12)
+
+
+### Bug Fixes
+
+* Update pom.xml ([1b9cfb6](https://github.com/weareretex/iconic.xr.iam-main-lib/commit/1b9cfb656a8f81f9e4543c76bcc578149f367182))
+
+## [1.4.1](https://github.com/weareretex/iconic.xr.iam-main-lib/compare/v1.4.0...v1.4.1) (2024-08-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.retex:xr-shared-main to v1.6.0 ([09f269a](https://github.com/weareretex/iconic.xr.iam-main-lib/commit/09f269af003dd19bb73b33060ca5b6e6657ef3a8))
+
 ## [1.4.0](https://github.com/weareretex/iconic.xr.iam-main-lib/compare/v1.3.0...v1.4.0) (2024-07-31)
 
 

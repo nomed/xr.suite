@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.1](https://github.com/weareretex/iconic.xr.iam-graphql/compare/v1.3.0...v1.3.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* #IAM-220 applicazioni list for iam home ([70a1949](https://github.com/weareretex/iconic.xr.iam-graphql/commit/70a19499e24000f85bf59309d234e8540e12a7d4))
+* #IAM-220 clean badge society query service ([347cd58](https://github.com/weareretex/iconic.xr.iam-graphql/commit/347cd583c2c5309956dea485199e71e24b2e53ed))
+* **deps:** update dependency com.retex:xr-iam-main to v1.4.1 ([c12e529](https://github.com/weareretex/iconic.xr.iam-graphql/commit/c12e529f384e5715b08839076268614eed2b6cc2))
+* **deps:** update dependency com.retex:xr-iam-main to v1.4.2 ([1051e56](https://github.com/weareretex/iconic.xr.iam-graphql/commit/1051e56346b808e358d037e91d43c786ca117f12))
+
 ## [1.3.0](https://github.com/weareretex/iconic.xr.iam-graphql/compare/v1.2.0...v1.3.0) (2024-07-31)
 
 

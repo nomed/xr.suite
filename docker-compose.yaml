@@ -1,0 +1,45 @@
+version: '3.7'
+
+# requires:
+# - iconic.docker-compose/rabbitmq 
+# - iconic.docker-compose/redis
+# - iconic.docker-compose/postgres
+
+services:
+  iconic-xr-iam-axonserver:
+    image: axoniq/axonserver:latest
+    hostname: iconic-xr-iam-axonserver
+    container_name: iconic-xr-iam-axonserver
+    volumes:
+      - ./.volumes/xr-iam/axon/data:/data
+      - ./.volumes/xr-iam/axon/events:/eventdata
+      - ./.volumes/xr-iam/axon/config:/config:ro
+    ports:
+      - '8026:8024'
+      - '8126:8124'
+      - '8226:8224'  
+    networks:
+      - proxy-network-iconic-xr
+    environment:
+      - AXONIQ_AXONSERVER_STANDALONE=true
+
+  iconic-xr-ledger-axonserver:
+    image: axoniq/axonserver:latest
+    hostname: iconic-xr-ledger-axonserver
+    container_name: iconic-xr-ledger-axonserver
+    volumes:
+      - ./.volumes/xr-ledger/axon/data:/data
+      - ./.volumes/xr-ledger/axon/events:/eventdata
+      - ./.volumes/xr-ledger/axon/config:/config:ro
+    ports:
+      - '8024:8024'
+      - '8124:8124'
+      - '8224:8224'  
+    networks:
+      - proxy-network-iconic-xr
+    environment:
+      - AXONIQ_AXONSERVER_STANDALONE=true
+networks:
+  proxy-network-iconic-xr:
+    name: iconic-network   
+    external: true       

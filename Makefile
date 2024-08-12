@@ -56,7 +56,7 @@ xr-shared: tmp
 	if [ -d ".tmp/xr-shared-main/.git" ]; then \
 		cd .tmp/xr-shared-main && git pull; \
 	else \
-		git clone -b imp-transactional https://github.com/retex-iconic/iconic.xr.shared-main-lib .tmp/xr-shared-main; \
+		git clone  https://github.com/retex-iconic/iconic.xr.shared-main-lib .tmp/xr-shared-main; \
 	fi
 
 	rsync -av --exclude='.git' \
@@ -80,7 +80,7 @@ xr-iam: tmp
 	if [ -d ".tmp/xr-iam-backend/.git" ]; then \
 		cd .tmp/xr-iam-backend && git pull; \
 	else \
-		git clone -b imp-transactional https://github.com/retex-iconic/iconic.xr.xrmsiam .tmp/xr-iam-backend; \
+		git clone https://github.com/retex-iconic/iconic.xr.xrmsiam .tmp/xr-iam-backend; \
 	fi
 
 	rsync -av --exclude='.git' \
@@ -256,6 +256,22 @@ package:
 	cd pkgs/xr-ledger-main && mvn clean package install -DskipTests 
 	cd pkgs/xr-ledger-backend && mvn clean package install -DskipTests 
 	cd pkgs/xr-ledger-graphql && mvn clean package install -DskipTests 
+
+clean-pkgs:
+
+	cd pkgs/xr-bom && mvn clean  -DskipTests
+	cd pkgs/xr-conf && mvn clean  -DskipTests 
+	cd pkgs/xr-shared-main && mvn clean -DskipTests 	
+	cd pkgs/xr-shared && mvn clean  -DskipTests 
+	cd pkgs/xr-masterdata-main && mvn clean -DskipTests 	
+	cd pkgs/xr-masterdata-backend && mvn clean  -DskipTests 
+	cd pkgs/xr-masterdata-graphql && mvn clean -DskipTests 	
+	cd pkgs/xr-iam-main && mvn clean  -DskipTests 
+	cd pkgs/xr-iam-backend && mvn clean  -DskipTests 
+	cd pkgs/xr-iam-graphql && mvn clean  -DskipTests 
+	cd pkgs/xr-ledger-main && mvn clean  -DskipTests 
+	cd pkgs/xr-ledger-backend && mvn clean -DskipTests 
+	cd pkgs/xr-ledger-graphql && mvn clean -DskipTests 	
 
 
 

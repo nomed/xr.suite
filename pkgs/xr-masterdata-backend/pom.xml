@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.retex</groupId>
     <artifactId>xr-conf</artifactId>
     <version>0.1.2</version>
-    <relativePath/>
+    <relativePath />
   </parent>
   <groupId>com.retex</groupId>
   <artifactId>xr-masterdata-backend</artifactId>
@@ -14,11 +14,11 @@
   <description>Iconic XR - MasterData Service API</description>
    <properties>
     <java.version>17</java.version>
-    <xr-bom.version>0.12.3</xr-bom.version>
+    <xr-bom.version>0.12.6-SNAPSHOT</xr-bom.version>
     <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-    <xr-shared.version>0.8.0</xr-shared.version>
+    <xr-shared.version>0.9.1</xr-shared.version>
     <xr-masterdata-main.version>1.1.0</xr-masterdata-main.version>
-    <!--  -->
+    
     <jackson-datatype.version>2.12.5</jackson-datatype.version>
   </properties>
   <developers>
@@ -71,10 +71,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
       </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-jsr310</artifactId>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -118,7 +114,7 @@
       <artifactId>xr-masterdata-main</artifactId>
       <version>${xr-masterdata-main.version}</version>
     </dependency>
-    <!--  -->
+    
     <dependency>
       <groupId>io.swagger</groupId>
       <artifactId>swagger-annotations</artifactId>
@@ -198,7 +194,7 @@
       <artifactId>hibernate-entitymanager</artifactId>
     </dependency>
     <dependency>
-      <!-- postgres for springboot -->
+      
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <scope>runtime</scope>
@@ -217,6 +213,11 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>32.0.0-android</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+      <version>${jackson-datatype.version}</version>
     </dependency>
   </dependencies>
   <build>

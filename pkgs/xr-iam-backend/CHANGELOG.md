@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.8.0](https://github.com/weareretx/iconic.xr.suite/compare/v1.7.0...v1.8.0) (2024-08-12)
+
+
+### Features
+
+* subscribind xrmsiam processing group ([9158a46](https://github.com/weareretx/iconic.xr.suite/commit/9158a46d0e4e1acd2a7a81a326eb1b7d02e74c7c))
+* subscribing axon default processor ([9158a46](https://github.com/weareretx/iconic.xr.suite/commit/9158a46d0e4e1acd2a7a81a326eb1b7d02e74c7c))
+* tracking xrmsiam-pubsub processing group ([9158a46](https://github.com/weareretx/iconic.xr.suite/commit/9158a46d0e4e1acd2a7a81a326eb1b7d02e74c7c))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.retex:xr-iam-main to v1.4.2 ([b6ea285](https://github.com/weareretx/iconic.xr.suite/commit/b6ea285187420031fa2e0122d37b05e08ca2aa52))
+* **deps:** update dependency com.retex:xr-shared to v0.9.1 ([657b978](https://github.com/weareretx/iconic.xr.suite/commit/657b978f588777af14467e3e7244032c80f622c0))
+
+## [1.7.0](https://github.com/weareretx/iconic.xr.suite/compare/v1.6.0...v1.7.0) (2024-08-09)
+
+
+### Features
+
+* IXB-531 REFACTORING-GERARCHIA ([9b1e02c](https://github.com/weareretx/iconic.xr.suite/commit/9b1e02cf0dae4e72ec7e331d492e3fc039ac3e2f))
+* IXB-531 REFACTORING-GERARCHIA ([4a55437](https://github.com/weareretx/iconic.xr.suite/commit/4a55437a00808f981132e13dd2f600889009990f))
+
+
+### Bug Fixes
+
+* #IXB-531 fixes ([0678aea](https://github.com/weareretx/iconic.xr.suite/commit/0678aea99e554e03ce08fd83edef5461dd998f3c))
+* **deps:** update dependency com.retex:xr-iam-main to v1.4.1 ([c9b6207](https://github.com/weareretx/iconic.xr.suite/commit/c9b6207ac1eaff2bd5ca98975908b95118d860c2))
+* **deps:** update dependency com.retex:xr-shared to v0.8.0 ([6df7128](https://github.com/weareretx/iconic.xr.suite/commit/6df7128e3663d4a451e87c0f0277209c5d1616fe))
+* **deps:** update dependency com.retex:xr-shared to v0.9.0 ([510c599](https://github.com/weareretx/iconic.xr.suite/commit/510c599f39ca9a444c2f48d3172f660d78bc73ba))
+
 ## [1.6.0](https://github.com/weareretx/iconic.xr.suite/compare/v1.5.0...v1.6.0) (2024-07-31)
 
 

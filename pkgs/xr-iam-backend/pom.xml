@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.retex</groupId>
     <artifactId>xr-iam-backend</artifactId>
-    <version>1.6.0</version>
+    <version>1.8.0</version>
     <name>xr-iam-backend</name>
     <description>Iconic XR - Iam Service API</description>
     <properties>
@@ -18,8 +18,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <xr-bom.version>0.12.6-SNAPSHOT</xr-bom.version>
-        <xr-shared.version>0.8.0</xr-shared.version>
-        <xr-iam-main.version>1.4.0</xr-iam-main.version>
+        <xr-shared.version>0.9.1</xr-shared.version>
+        <xr-iam-main.version>1.4.2</xr-iam-main.version>
         
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <jackson-datatype.version>2.12.5</jackson-datatype.version>        

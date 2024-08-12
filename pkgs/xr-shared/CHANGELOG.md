@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.9.1](https://github.com/weareretex/iconic.xr.shared-lib/compare/v0.9.0...v0.9.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.retex:xr-shared-main to v1.7.0 ([8c026f0](https://github.com/weareretex/iconic.xr.shared-lib/commit/8c026f01dce6c7640adb149972b91328ca3b767b))
+
+## [0.9.0](https://github.com/weareretex/iconic.xr.shared-lib/compare/v0.8.0...v0.9.0) (2024-08-09)
+
+
+### Features
+
+* IXB-531 REFACTORING-GERARCHIA ([2337231](https://github.com/weareretex/iconic.xr.shared-lib/commit/23372311f18fbbdd949b999fdaaa721e1b68c3fb))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.retex:xr-shared-main to v1.6.0 ([d5837ef](https://github.com/weareretex/iconic.xr.shared-lib/commit/d5837ef58ff2f7a825edc1fdd7d32ff513581b10))
+
 ## [0.8.0](https://github.com/weareretex/iconic.xr.shared-lib/compare/v0.7.2...v0.8.0) (2024-08-05)
 
 
