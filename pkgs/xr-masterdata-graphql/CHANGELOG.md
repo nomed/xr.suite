@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.2](https://github.com/nomed/xr.suite/compare/xr-masterdata-graphql-v1.2.1...xr-masterdata-graphql@v1.2.2) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([a05e685](https://github.com/nomed/xr.suite/commit/a05e68595a5a093cb577e80e7f84c5ba14b189e4))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([36f32ce](https://github.com/nomed/xr.suite/commit/36f32ce077fbec2b21aae58afba1713c85d8d96e))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([08219d6](https://github.com/nomed/xr.suite/commit/08219d6acbae9372edf3ecebeae16ea731a5eaad))
+
 ## [1.2.1](https://github.com/weareretex/iconic.xr.masterdata-graphql/compare/v1.2.0...v1.2.1) (2024-07-18)
 
 
