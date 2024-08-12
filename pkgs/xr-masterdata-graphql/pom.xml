@@ -5,11 +5,11 @@
 		<groupId>com.retex</groupId>
 		<artifactId>xr-conf</artifactId>
 		<version>0.1.2</version>
-		<relativePath />
+		<relativePath/>
 	</parent>
 	<groupId>com.retex</groupId>
 	<artifactId>xr-masterdata-graphql</artifactId>
-	<version>1.2.1</version>
+	<version>1.2.2</version>
 	<name>xr-masterdata-graphql</name>
 	<description>Iconic XR - MasterData GraphQL</description>
 	<properties>
