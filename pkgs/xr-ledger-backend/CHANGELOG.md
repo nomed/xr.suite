@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.1](https://github.com/nomed/xr.suite/compare/xr-ledger-backend-v1.3.0...xr-ledger-backend@v1.3.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([6aa884a](https://github.com/nomed/xr.suite/commit/6aa884a00809bad6b17c28df8fa7ed6a4d1f27ce))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([78c4953](https://github.com/nomed/xr.suite/commit/78c49538550974403a7dfe7ee5acc6905ddb9923))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([bad18b2](https://github.com/nomed/xr.suite/commit/bad18b2ccb166f0bcb4203406284477af93c14b8))
+* update xr-shared from 0.8.0 to 0.8.1 ([e2f3c5c](https://github.com/nomed/xr.suite/commit/e2f3c5c4b8f60b9d6ec7498b8326c156cc6a6b48))
+
 ## [1.3.0](https://github.com/weareretex/iconic.xr.xrmsledger/compare/v1.2.3...v1.3.0) (2024-07-18)
 
 
