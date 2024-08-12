@@ -5,11 +5,11 @@
 		<groupId>com.retex</groupId>
 		<artifactId>xr-conf</artifactId>
 		<version>0.1.2</version>
-		<relativePath />
+		<relativePath/>
 	</parent>
 	<groupId>com.retex</groupId>
 	<artifactId>xr-ledger-graphql</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<name>xr-ledger-graphql</name>
 	<description>Iconic XR - Ledger GraphQL</description>
 	<properties>
