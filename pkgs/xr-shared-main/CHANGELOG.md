@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.1](https://github.com/nomed/xr.suite/compare/xr-shared-main-v1.6.0...xr-shared-main@v1.6.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([6a6d7e3](https://github.com/nomed/xr.suite/commit/6a6d7e3e261b944584d2788da9a92cea201d9a63))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([cf38411](https://github.com/nomed/xr.suite/commit/cf3841144612da85f7885f294734c0b6b7fa0364))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([4f9df09](https://github.com/nomed/xr.suite/commit/4f9df0932cca45966520ef9b80114faa47048c6e))
+
 ## [1.7.0](https://github.com/weareretex/iconic.xr.shared-main-lib/compare/v1.6.0...v1.7.0) (2024-08-09)
 
 
