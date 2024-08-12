@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.retex</groupId>
 	<artifactId>xr-iam-main</artifactId>
-	<version>1.4.2</version>
+	<version>1.4.1</version>
 	<name>xr-iam-main</name>
 	<description>Iconic XR - Iam main lib</description>
 	<properties>

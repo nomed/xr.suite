@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.1](https://github.com/nomed/xr.suite/compare/xr-iam-main-v1.4.0...xr-iam-main@v1.4.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([e5cbd9f](https://github.com/nomed/xr.suite/commit/e5cbd9f40fc1b2dfb780aa45b889536bf1b0b6e3))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([8ef4660](https://github.com/nomed/xr.suite/commit/8ef466034f1eff4df4036bc32b66177abc097a39))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([76311a7](https://github.com/nomed/xr.suite/commit/76311a71afb577fc2ff65519ff395c7e7bb2164e))
+
 ## [1.4.2](https://github.com/weareretex/iconic.xr.iam-main-lib/compare/v1.4.1...v1.4.2) (2024-08-12)
 
 
