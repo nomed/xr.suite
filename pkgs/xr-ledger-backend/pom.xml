@@ -5,11 +5,11 @@
     <groupId>com.retex</groupId>
     <artifactId>xr-conf</artifactId>
     <version>0.1.2</version>
-    <relativePath />
+    <relativePath/>
  </parent>
   <groupId>com.retex</groupId>
   <artifactId>xr-ledger-backend</artifactId>
-  <version>1.3.0</version>
+  <version>1.3.1</version>
   <name>xr-ledger-backend</name>
   <description>Iconic XR - Ledger Service API</description>
   <properties>
