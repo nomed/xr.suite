@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.1](https://github.com/nomed/xr.suite/compare/xr-iam-graphql-v1.3.0...xr-iam-graphql@v1.3.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([46be2a8](https://github.com/nomed/xr.suite/commit/46be2a8877e60031055a2d1223604b025c4bf88d))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([e99df30](https://github.com/nomed/xr.suite/commit/e99df3030590749252d93207404a52c2e8c1f637))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([441b92b](https://github.com/nomed/xr.suite/commit/441b92baf2b49c7adfc6cabcd0cabda6e1f2b3a7))
+
 ## [1.3.1](https://github.com/weareretex/iconic.xr.iam-graphql/compare/v1.3.0...v1.3.1) (2024-08-12)
 
 
