@@ -5,11 +5,11 @@
     <groupId>com.retex</groupId>
     <artifactId>xr-conf</artifactId>
     <version>0.1.2</version>
-    <relativePath />
+    <relativePath/>
   </parent>
   <groupId>com.retex</groupId>
   <artifactId>xr-masterdata-backend</artifactId>
-  <version>1.9.1</version>
+  <version>1.9.2</version>
   <name>xr-masterdata-backend</name>
   <description>Iconic XR - MasterData Service API</description>
    <properties>
