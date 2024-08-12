@@ -5,11 +5,11 @@
         <groupId>com.retex</groupId>
         <artifactId>xr-conf</artifactId>
         <version>0.1.2</version>
-        <relativePath />
+        <relativePath/>
     </parent>
     <groupId>com.retex</groupId>
     <artifactId>xr-iam-backend</artifactId>
-    <version>1.8.0</version>
+    <version>1.6.1</version>
     <name>xr-iam-backend</name>
     <description>Iconic XR - Iam Service API</description>
     <properties>
