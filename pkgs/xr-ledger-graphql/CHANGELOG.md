@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.1](https://github.com/nomed/xr.suite/compare/xr-ledger-graphql-v1.2.0...xr-ledger-graphql@v1.2.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([b777920](https://github.com/nomed/xr.suite/commit/b777920b21b901dacd885f612e7dd0b1cc03d2d2))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([f3a161e](https://github.com/nomed/xr.suite/commit/f3a161ee98b6b585414444bddcb73e39ca7d9bc9))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([fd1e714](https://github.com/nomed/xr.suite/commit/fd1e714fc585cc3e062a30fe8cf0047f83d5fd8d))
+
 ## [1.2.0](https://github.com/weareretex/iconic.xr.ledger-graphql/compare/v1.1.0...v1.2.0) (2024-07-18)
 
 
