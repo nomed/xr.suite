@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/nomed/xr.suite/compare/xr-masterdata-main-v1.1.0...xr-masterdata-main@v1.1.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([e357acc](https://github.com/nomed/xr.suite/commit/e357accedb865198cb2c3fae4daa3f5e7334342e))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([0c4bea7](https://github.com/nomed/xr.suite/commit/0c4bea743bb86ccb9eb2965e87583ad84e651b1e))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([1ea26d8](https://github.com/nomed/xr.suite/commit/1ea26d8f0ce5db88cd3edec045218de6a1763078))
+
 ## [1.1.0](https://github.com/weareretex/iconic.xr.masterdata-main-lib/compare/v1.0.0...v1.1.0) (2024-07-18)
 
 
