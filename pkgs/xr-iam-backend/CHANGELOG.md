@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.1](https://github.com/nomed/xr.suite/compare/xr-iam-backend-v1.6.0...xr-iam-backend@v1.6.1) (2024-08-12)
+
+
+### Dependencies
+
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([4964083](https://github.com/nomed/xr.suite/commit/49640831ec9c824d9d36156a5468c6546a650908))
+* update xr-bom from 0.12.3 to 0.12.6-SNAPSHOT ([1da8117](https://github.com/nomed/xr.suite/commit/1da8117fb56b4798912bd50b9200912ed2224ccb))
+* update xr-bom from 0.12.6-SNAPSHOT to 0.12.6 ([7a34239](https://github.com/nomed/xr.suite/commit/7a34239b8134747c7b0f901466265916381176bf))
+* update xr-shared from 0.8.0 to 0.8.1 ([2f3ef26](https://github.com/nomed/xr.suite/commit/2f3ef268e9b472b581b51b787477bb05e5cad353))
+
 ## [1.8.0](https://github.com/weareretx/iconic.xr.suite/compare/v1.7.0...v1.8.0) (2024-08-12)
 
 
